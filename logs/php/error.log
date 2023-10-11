@@ -1,0 +1,35 @@
+[08-Oct-2023 08:29:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function twentynineteen_the_posts_navigation() in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/index.php:33
+Stack trace:
+#0 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-blog-header.php(19): require_once('/Users/soumame/...')
+#2 /Users/soumame/Local Sites/52hztestenviroment/app/public/index.php(17): require('/Users/soumame/...')
+#3 {main}
+  thrown in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/index.php on line 33
+[09-Oct-2023 01:13:53 UTC] PHP Warning:  require_once(bs4navwalker.php): Failed to open stream: No such file or directory in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/functions.php on line 2
+[09-Oct-2023 01:13:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'bs4navwalker.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/functions.php:2
+Stack trace:
+#0 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-settings.php(600): include()
+#1 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-config.php(103): require_once('/Users/soumame/...')
+#2 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-load.php(50): require_once('/Users/soumame/...')
+#3 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-blog-header.php(13): require_once('/Users/soumame/...')
+#4 /Users/soumame/Local Sites/52hztestenviroment/app/public/index.php(17): require('/Users/soumame/...')
+#5 {main}
+  thrown in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/functions.php on line 2
+[09-Oct-2023 01:13:54 UTC] PHP Warning:  require_once(bs4navwalker.php): Failed to open stream: No such file or directory in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/functions.php on line 2
+[09-Oct-2023 01:13:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'bs4navwalker.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/functions.php:2
+Stack trace:
+#0 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-settings.php(600): include()
+#1 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-config.php(103): require_once('/Users/soumame/...')
+#2 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-load.php(50): require_once('/Users/soumame/...')
+#3 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-blog-header.php(13): require_once('/Users/soumame/...')
+#4 /Users/soumame/Local Sites/52hztestenviroment/app/public/index.php(17): require('/Users/soumame/...')
+#5 {main}
+  thrown in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/functions.php on line 2
+[11-Oct-2023 03:40:23 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[11-Oct-2023 09:27:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function twentynineteen_the_posts_navigation() in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/index.php:33
+Stack trace:
+#0 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-blog-header.php(19): require_once('/Users/soumame/...')
+#2 /Users/soumame/Local Sites/52hztestenviroment/app/public/index.php(17): require('/Users/soumame/...')
+#3 {main}
+  thrown in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/index.php on line 33
