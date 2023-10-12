@@ -29,7 +29,7 @@
      if ( have_posts() ) {
        while ( have_posts() ) {
          the_post();
-         the_title( '<h1 class="entry-title">', '</h1>' );
+         the_title( '<h1 class="entry-title text-3xl">', '</h1>' );
          ?>
          <div class="entry-content">
            <?php the_content(); ?>

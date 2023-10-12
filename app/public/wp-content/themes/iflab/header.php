@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<nav class="menu-wrapper flex grow justify-between p-6 m-4 rounded-3xl bg-sky-200 relative">
+<nav class="menu-wrapper flex grow justify-between p-6 m-4 rounded-3xl bg-sky-200 shadow-lg sticky">
       <div class="">
           <input type="checkbox" id="menu-toggle" class="hidden">
           <label for="menu-toggle" class="menu-button">
@@ -51,7 +51,7 @@
         </div> 
     </div>
     <!--ロゴ -->
-    <div class="absolute left-[50%] up-[50%] translate-x-[-50%] translate-y-[-50%] p-6 bg-gray-500 rounded-3xl">
+    <div class="absolute left-[50%] up-[50%] translate-x-[-50%] translate-y-[-50%] p-6 bg-white shadow rounded-3xl">
       Logo
     </div>
 </nav>
