@@ -22,45 +22,44 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-
-<nav class="menu-wrapper flex grow justify-between p-6 m-4 rounded-3xl bg-sky-200 shadow-lg sticky">
-      <div class="">
+<nav class="fixed w-full top-0 left-0 p-4 z-50">
+      <div class="w-full menu-wrapper flex grow justify-between p-6 rounded-3xl bg-sky-200 shadow-lg">
+        <div>
           <input type="checkbox" id="menu-toggle" class="hidden">
           <label for="menu-toggle" class="menu-button">
               <span></span>
               <span></span>
               <span></span>
           </label>
-          <div class="menu">
-          <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-          <?php
-            wp_nav_menu([
-              'menu'            => 'top',
-              'theme_location'  => 'top',
-              'container'       => 'ul',
-              'container_id'    => 'bs4navbar',
-              'container_class' => 'collapse navbar-collapse',
-              'menu_id'         => false,
-              'menu_class'      => 'block py-2 pl-3 pr-4 text-black hover:bg-gray-100',
-              'depth'           => 2,
-              'fallback_cb'     => 'bs4navwalker::fallback',
-              'walker'          => new bs4navwalker()
-            ]);
-            ?>
-        </ul>
+            <div class="menu">
+            <ul class="flex flex-col m-4">
+            <?php
+              wp_nav_menu([
+                'menu'            => 'top',
+                'theme_location'  => 'top',
+                'container'       => 'ul',
+                'container_id'    => 'bs4navbar',
+                'container_class' => 'collapse navbar-collapse',
+                'menu_id'         => false,
+                'menu_class'      => 'block flex flex-col py-2 pl-3 pr-4 text-black font-bold text-xl hover:bg-gray-100',
+                'depth'           => 2,
+                'fallback_cb'     => 'bs4navwalker::fallback',
+                'walker'  => new custom_walker_nav_menu
+              ]);
+              ?>
+            </ul>
         </div> 
-    </div>
+      </div>
     <!--ロゴ -->
-    <div class="absolute left-[50%] up-[50%] translate-x-[-50%] translate-y-[-50%] p-6 bg-white shadow rounded-3xl">
-      Logo
+      <div class="absolute left-[50%] up-[50%] translate-x-[-50%] translate-y-[-50%] p-2 bg-white shadow rounded-full overflow-hidden">
+        <img src="http://iflab/wp-content/uploads/2023/10/ICO-to-JPG.jpg" alt="logo" class="md:w-20 md:h-20 w-16 h-16">
+      </div>
     </div>
 </nav>
 
 <div id="content" class="site-content">
 <style>
-.menu-wrapper {
-    position: relative;
-}
+
 
 .menu-button {
     display: inline-block;
@@ -82,7 +81,7 @@
 .menu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
 }
 
 #menu-toggle:checked ~ .menu-button span:nth-child(1) {
@@ -98,10 +97,19 @@
 }
 
 #menu-toggle:checked ~ .menu {
-    max-height: 200px; /* 必要に応じて調整してください */
+    max-height: 100vh; /* 必要に応じて調整してください */
 }
 
 .menu ul {
+    opacity: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+#menu-toggle:checked ~ .menu ul {
+    opacity: 1;
     list-style: none;
     padding: 0;
     margin: 0;
