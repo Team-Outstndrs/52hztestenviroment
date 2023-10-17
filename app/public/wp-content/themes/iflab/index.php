@@ -33,8 +33,9 @@
         <div class="flex flex-col sm:flex-row-reverse justify-between w-full rounded-2xl bg-gray-200 shadow-sm hover:shadow-lg transition duration-300 ease-in-out hover:bg-gray-300 p-2 md:p-4 mt-4 relative">
             <img src="<?php the_post_thumbnail_url() ?>" alt="thumbnail" class=" h-48 w-48 object-cover rounded-2xl">
             <div class="text-gray-700 my-auto">
-            <?php the_title( '<h1 class="text-gray-900 entry-title text-3xl">', '</h1>' );?>
+            <?php the_title( '<h1 class="text-gray-900 entry-title text-3xl my-2">', '</h1>' );?>
             <?php the_content();?>
+            <p class="font-bold text-blue-500 mt-2">記事を見る</p>
             </div>
             <a href="<?php the_permalink( ); ?>" class="absolute w-full h-full top-0 left-0"></a>
         </div>
