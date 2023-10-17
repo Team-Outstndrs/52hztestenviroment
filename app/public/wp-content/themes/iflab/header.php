@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<nav class="fixed w-full top-0 left-0 p-4 z-50">
+<nav class="fixed w-full max-w-6xl top-0 flex justify-center items-center p-4 z-50">
       <div class="w-full menu-wrapper flex grow justify-between p-6 rounded-3xl bg-sky-200 shadow-lg">
         <div>
           <input type="checkbox" id="menu-toggle" class="hidden">

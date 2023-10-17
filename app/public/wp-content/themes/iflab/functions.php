@@ -1,7 +1,10 @@
 <?php
 
-// Register WordPress nav menu
-register_nav_menu('top', 'Top menu');
+// トップナビゲーショn
+register_nav_menu('top', 'ナビゲーションメニュー');
+
+// フッターナビゲーション
+register_nav_menu('footer', 'ページ下部（フッターメニュー）');
 
 //サムネイルを有効
 add_theme_support('post-thumbnails');
