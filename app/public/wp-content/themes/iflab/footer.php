@@ -42,23 +42,25 @@
 				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 			}
 			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-                    <?php
-                    wp_nav_menu([
-                    'menu'            => 'footer',
-                    'theme_location'  => 'top',
-                    'container'       => 'ul',
-                    'container_id'    => 'bs4navbar',
-                    'container_class' => 'collapse navbar-collapse',
-                    'menu_id'         => false,
-                    'menu_class'      => 'block flex flex-row mx-2 text-black font-bold text-xl hover:bg-gray-100',
-                    'depth'           => 2,
-                    'fallback_cb'     => 'bs4navwalker::fallback',
-                    'walker'  => new custom_walker_nav_menu
-                    ]);
-                    ?>
-				</nav><!-- .footer-navigation -->
+			<div class="footer">
+				<?php if ( has_nav_menu( 'footer' ) ) : ?>
+					<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
+						<?php
+						wp_nav_menu([
+						'menu'            => 'footer',
+						'theme_location'  => 'top',
+						'container'       => 'ul',
+						'container_id'    => 'bs4navbar',
+						'container_class' => 'collapse navbar-collapse',
+						'menu_id'         => false,
+						'menu_class'      => 'block flex flex-row mx-2 text-black font-bold text-xl text-gray-700 gap-4',
+						'depth'           => 2,
+						'fallback_cb'     => 'bs4navwalker::fallback',
+						'walker'  => new custom_walker_nav_menu
+						]);
+						?>
+					</nav><!-- .footer-navigation -->
+					</div>
 			<?php endif; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
@@ -70,7 +72,12 @@
 </body>
 </html>
 <style>
-.menu-item {
-    padding: 10px;
+.menu {
+ padding : 10;
+}
+
+.footer li:hover {
+ color : #9ca3af;
+ transition: all 0.3s; 
 }
 </style>

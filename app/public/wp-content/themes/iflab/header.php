@@ -41,7 +41,7 @@
                 'container_id'    => 'bs4navbar',
                 'container_class' => 'collapse navbar-collapse',
                 'menu_id'         => false,
-                'menu_class'      => 'block flex flex-col py-2 pl-3 pr-4 text-black font-bold text-xl hover:bg-gray-100',
+                'menu_class'      => 'block flex flex-col py-2 pl-3 pr-4 text-black font-bold text-xl text-gray-700',
                 'depth'           => 2,
                 'fallback_cb'     => 'bs4navwalker::fallback',
                 'walker'  => new custom_walker_nav_menu
@@ -117,5 +117,10 @@
 
 .menu li {
     padding: 10px;
+
+}
+.menu li:hover {
+ color : #9ca3af;
+ transition: all 0.3s; 
 }
 </style>
