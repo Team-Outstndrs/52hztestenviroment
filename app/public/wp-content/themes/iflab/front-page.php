@@ -33,9 +33,9 @@
         
          the_post();?>
         <div class="flex flex-col sm:flex-row-reverse justify-between w-full rounded-2xl bg-gray-200 shadow-sm hover:shadow-lg transition duration-300 ease-in-out hover:bg-gray-300 p-3 md:p-4 mt-4 relative">
-            <img src="<?php the_post_thumbnail_url() ?>" alt="thumbnail" class=" md:aspect-video md:w-48 sm:h-36 sm:w-48 h-24 w-36 object-cover rounded-2xl">
+            <img src="<?php the_post_thumbnail_url() ?>" alt="thumbnail" class=" md:aspect-video md:w-60 sm:w-48 sm:h-48 h-48 object-cover rounded-2xl">
             <div class="text-gray-700 my-auto">
-            <?php the_title( '<h1 class="text-gray-900 entry-title text-2xl md:text-3xl my-2">', '</h1>' );?>
+            <?php the_title( '<h1 class="text-gray-900 entry-title text-2xl md:text-3xl my-2 shrink">', '</h1>' );?>
             <?php
             if(mb_strlen($post->post_content, 'UTF-8')>50){
             $content= mb_substr(strip_tags($post->post_content), 0, 50, 'UTF-8');
