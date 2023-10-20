@@ -23,7 +23,7 @@
    </head>
    <body class="bg-slate-100 mt-48 p-6 max-w-6xl flex flex-col justify-center items-center mx-auto">
    <?php get_header(); ?>
-    <h2 class="text-3xl font-bold"> 記事一覧</h2>
+    <h2 class="text-3xl font-bold"> 記事を見る</h2>
     <p class="mt-2">最新の４件を表示しています</p>
   <div class="gap-4">
   <?php query_posts('posts_per_page=4'); ?> 
@@ -53,9 +53,8 @@
       }?>
   </div>
     <div class="flex justify-center items-center mt-4">
-        <a href="/articles" class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-4 m-2 rounded-full">
-        もっと見る
-        </a>
+        <a href="/articles" class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-4 m-2 rounded-full flex gap-2">
+        もっと見る</a>
     
    </body>
    <?php get_footer(); ?>

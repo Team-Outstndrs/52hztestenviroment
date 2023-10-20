@@ -51,10 +51,10 @@
         </div> 
       </div>
     <!--ロゴ -->
-      <div class="absolute left-[50%] up-[50%] translate-x-[-50%] translate-y-[-50%] p-2 bg-white shadow rounded-full overflow-hidden">
+      <a href="/" class="absolute left-[50%] up-[50%] translate-x-[-50%] translate-y-[-50%] p-2 bg-white shadow rounded-full overflow-hidden">
         <?php $site_icon_url = get_site_icon_url(128, 'app/public/wp-content/themes/iflab/assets/image/error.png');
         echo '<img src="' . esc_url($site_icon_url) . '" alt="Site logo" class="md:w-20 md:h-20 w-16 h-16 p-1 object-contain" />'; ?>
-      </div>
+      </a>
     </div>
 </nav>
 

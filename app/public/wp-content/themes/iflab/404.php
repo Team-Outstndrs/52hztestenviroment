@@ -19,7 +19,7 @@
    <?php get_header(); ?>
 
   <div class="flex items-center justify-center">
-	<h1 class="p-4 text-3xl font-bold">404</h1><p class="p-4 text-center ">ページが見つかりませんでした。</p>
+	<h1 class="p-4 text-3xl font-bold italic">404</h1><p class="p-4 text-center ">ページが見つかりませんでした。</p>
 
   </div>
     
