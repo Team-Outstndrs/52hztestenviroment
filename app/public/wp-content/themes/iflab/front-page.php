@@ -23,6 +23,38 @@
    </head>
    <body class="bg-slate-100 mt-48 p-6 max-w-6xl flex flex-col justify-center items-center mx-auto">
    <?php get_header(); ?>
+   <!-- メインビジュアル -->
+   <div>
+  <div class="grid gap-4 md:grid-cols-3 grid-cols-1 text-gray-900 my-6">
+    <div class="p-4 rounded-3xl bg-sky-200 ">
+      <h1 class="text-2xl lg:text-3xl font-bold">フリースクール</h1>
+      <p class="pt-2 text-gray-700">説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ</p>
+      <a href="" class="">
+        <button class="p-3 mt-2 rounded-full bg-yellow-200">さらに詳しく
+        </button>
+      </a>
+    </div>
+    <div class="p-4 rounded-3xl bg-sky-200 ">
+      <h1 class="text-2xl lg:text-3xl font-bold">ペアトレ講座</h1>
+      <p class="pt-2 text-gray-700">説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ</p>
+      <a href="" class="">
+        <button class="p-3 mt-2 rounded-full bg-yellow-200">さらに詳しく
+        </button>
+      </a>
+    </div>
+    <div class="p-4 rounded-3xl bg-sky-200 ">
+      <h1 class="text-2xl lg:text-3xl font-bold">講演会</h1>
+      <p class="pt-2 text-gray-700">説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ</p>
+      <a href="" class="">
+        <button class="p-3 mt-2 rounded-full bg-yellow-200">さらに詳しく
+        </button>
+      </a>
+    </div>
+
+  </div>
+    <!-- メインビジュアルここまで -->
+
+    <!-- 記事一覧 -->
     <h2 class="text-3xl font-bold"> 記事を見る</h2>
     <p class="mt-2">最新の４件を表示しています</p>
   <div class="gap-4">
