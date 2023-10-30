@@ -21,12 +21,16 @@
      <?php wp_head(); ?>
      <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
    </head>
-   <body class="bg-slate-100 mt-48 p-6 max-w-6xl flex flex-col justify-center items-center mx-auto">
+   <body class="bg-slate-100 mt-16 p-6 max-w-6xl flex flex-col justify-center items-center mx-auto">
    <?php get_header(); ?>
    <!-- メインビジュアル -->
    <div>
-  <div class="grid gap-4 md:grid-cols-3 grid-cols-1 text-gray-900 my-6">
-    <div class="p-4 rounded-3xl bg-sky-200 ">
+  <div class="grid md:grid-cols-3 grid-cols-1 text-gray-900">
+    <div class="col-span-full bg-red-500 rounded-xl relative">
+      <img src="https://picsum.photos/800/400" alt="thumbnail" class="w-full h-full object-cover rounded-xl">
+      <h2 class="absolute bottom-4 left-4 text-2xl font-bold text-white">タイトル</h2>
+    </div>
+    <div class="p-4 md:rounded-bl-3xl md:rounded-none rounded-3xl bg-sky-200 md:mt-0 mt-4">
       <h1 class="text-2xl lg:text-3xl font-bold">フリースクール</h1>
       <p class="pt-2 text-gray-700">説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ</p>
       <a href="" class="">
@@ -34,7 +38,7 @@
         </button>
       </a>
     </div>
-    <div class="p-4 rounded-3xl bg-sky-200 ">
+    <div class="p-4 md:rounded-none rounded-3xl bg-sky-200 md:mt-0 mt-4">
       <h1 class="text-2xl lg:text-3xl font-bold">ペアトレ講座</h1>
       <p class="pt-2 text-gray-700">説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ</p>
       <a href="" class="">
@@ -42,7 +46,7 @@
         </button>
       </a>
     </div>
-    <div class="p-4 rounded-3xl bg-sky-200 ">
+    <div class="p-4 md:rounded-br-3xl md:rounded-none rounded-3xl bg-sky-200 md:mt-0 mt-4">
       <h1 class="text-2xl lg:text-3xl font-bold">講演会</h1>
       <p class="pt-2 text-gray-700">説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ説明はここ</p>
       <a href="" class="">

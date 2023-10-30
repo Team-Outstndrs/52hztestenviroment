@@ -66,3 +66,5 @@ Stack trace:
 #2 /Users/soumame/Local Sites/52hztestenviroment/app/public/index.php(17): require('/Users/soumame/...')
 #3 {main}
   thrown in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-content/themes/iflab/404.php on line 13
+[29-Oct-2023 06:49:02 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-includes/update.php on line 211
+[29-Oct-2023 06:49:43 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/soumame/Local Sites/52hztestenviroment/app/public/wp-includes/update.php on line 449
